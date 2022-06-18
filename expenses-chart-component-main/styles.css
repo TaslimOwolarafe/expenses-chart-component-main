@@ -158,6 +158,14 @@ hr {
     margin-top: 18px;
 }
 
+.attribution {
+    padding: 20px;
+}
+
+.attribution p, a {
+    text-decoration: none;
+    font-size: 15px;
+}
 
 
 @media screen and (max-width: 375px) {

@@ -37,10 +37,21 @@
       });
         var today = new Date();
         var dd = String(today.getDay()).padStart(2, '0');
-        today =  dd-1;
-        day_id = `#c${today}`
-        var c_day = document.querySelector(day_id)
-        c_day.classList.add("current-day")
+        todayy =  dd-1;
+        if (todayy == -1) {
+          let day_id = `#c6`
+          // console.log(day_id)
+          var c_day = document.querySelector(day_id)
+          // console.log(c_day)
+          c_day.classList.add("current-day")
+        } else {
+          day_id = `#c${todayy}`
+          // console.log(day_id)
+          var c_day = document.querySelector(day_id)
+          // console.log(c_day)
+          c_day.classList.add("current-day")
+        };
+        
 
 
         function add(days) {
